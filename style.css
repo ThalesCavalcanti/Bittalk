@@ -1,3 +1,9 @@
+:root {
+    --cor-botao-online: #235723;
+    --cor-lista-amigos: #4F5959;
+    --cor-bordas: #BBBFBA;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -9,4 +15,12 @@ body {
     color: #F2F2EB;
     background-color: #0D0D0D;
     box-sizing: border-box;
+}
+
+header {
+    display: grid;
+  grid-template-columns: 300px 1fr;
+  align-items: center;
+  padding: 10px 20px;
+  border-bottom: 1px solid var(--cor-bordas);
 }
