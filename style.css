@@ -2,3 +2,11 @@
     margin: 0;
     padding: 0;
 }
+
+body {
+    font-family: 'Jersey 15', sans-serif;
+    font-size: 300;
+    color: #F2F2EB;
+    background-color: #0D0D0D;
+    box-sizing: border-box;
+}
