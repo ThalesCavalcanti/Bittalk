@@ -52,3 +52,17 @@ header {
   flex-direction: column;
   gap: 12px;
 }
+
+.perfil a {
+    text-decoration: none;
+    color: #F2F2EB;
+}
+
+.perfil img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  align-self: center;
+  padding-bottom: 1em;
+  padding-top: 1em;
+}
