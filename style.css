@@ -66,3 +66,49 @@ header {
   padding-bottom: 1em;
   padding-top: 1em;
 }
+
+.feed {
+  max-width: 600px;
+  margin-left: 4em;
+  border-left: 1px solid var(--border);
+  border-right: 1px solid var(--border);
+}
+
+.post {
+  padding: 12px;
+  border-bottom: 1px solid var(--cor-bordas);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.topo {
+  display: flex;
+  gap: 10px;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.nome {
+  font-weight: 500;
+}
+
+.meta {
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.texto {
+  margin: 0;
+  font-size: 14px;
+}
+
+.img {
+  width: 100%;
+  border-radius: 10px;
+}
+
