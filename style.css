@@ -33,3 +33,22 @@ header {
   border: none;
   padding: 0 10px;
 }
+
+.layout {
+  display: grid;
+  grid-template-columns: 160px 1fr 260px;
+  gap: 10px;
+  padding: 20px;
+}
+
+.perfil {
+  font-weight: 400;
+  font-size: 24px;
+  border-radius: 10px;
+  background-color: #232525;
+  height: 600px;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  gap: 12px;
+}
