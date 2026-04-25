@@ -37,6 +37,20 @@ body {
   border-bottom: 1px solid var(--cor-bordas);
 }
 
+.site-header nav {
+  display: flex;
+  gap: var(--space-md);
+  align-items: center;
+}
+
+.site-header a {
+  text-decoration: none;
+  color: rgb(162, 44, 44);
+  padding: 6px 10px;
+  border: 2px solid var(--cor-lista-amigos);
+  border-radius: 8px;
+}
+
 .search {
   width: 100%;
   max-width: 600px;
