@@ -50,14 +50,36 @@ body {
   border: 2px solid var(--cor-lista-amigos);
   border-radius: 8px;
 }
+.site-header button {
+  background: none;
+  border: 2px solid var(--cor-lista-amigos);
+  color: var(--cor-lista-amigos);
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.search-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+}
+
+.search-wrapper i {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #888;
+  font-size: 14px;
+}
 
 .search {
   width: 100%;
-  max-width: 600px;
   height: 45px;
   border-radius: 10px;
   border: none;
-  padding: 0 10px;
+  padding: 0 10px 0 36px;
 }
 
 .layout {
