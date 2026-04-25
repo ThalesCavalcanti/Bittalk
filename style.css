@@ -279,3 +279,18 @@ body {
     bottom: 1.5rem;
   }
 }
+
+img,
+video,
+iframe {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  box-sizing: border-box;
+}
