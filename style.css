@@ -14,9 +14,9 @@
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -120,7 +120,8 @@ body {
   border-right: 1px solid var(--cor-bordas);
 }
 
-.post {  padding: var(--space-sm);
+.post {
+  padding: var(--space-sm);
   border-bottom: 1px solid var(--cor-bordas);
   display: flex;
   flex-direction: column;
@@ -212,9 +213,23 @@ body {
 .usuario.offline .indicador {
   background: #80848e;
 }
+
+#iconeTalk {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  font-size: 32px;
+  color: #f2f2eb;
+  border: 2px solid var(--cor-bordas);
+  background-color: #171616;
+  padding: 14px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
 .footer {
   text-align: center;
-  padding: 20px;
-  border-top: 1px solid var(--border);
-  color: var(--muted);
+  padding: var(--space-md);
+  border-top: 1px solid var(--cor-bordas);
+  opacity: 0.7;
 }
