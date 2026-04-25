@@ -58,6 +58,13 @@ body {
   border-radius: 6px;
   cursor: pointer;
 }
+.search {
+  width: 100%;
+  padding: 12px 32px;
+  border: 1px solid var(--cor-lista-amigos);
+  border-radius: 6px;
+  color: #f2f2eb;
+}
 
 .search-wrapper {
   position: relative;
