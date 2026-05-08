@@ -1,0 +1,13 @@
+:root {
+
+  --font-primary: "Jersey 15", sans-serif;
+  
+  --cor-bordas: #333;
+  --cor-fundo: #1f1f1f;
+  --cor-texto: #f2f2eb;
+  --cor-lista-amigos: #a22c2c;
+
+  --space-sm: 1rem;
+  --space-md: 1.5rem;
+  --space-lg: 2rem;
+}
