@@ -12,3 +12,5 @@ document.addEventListener("keydown", (e) => {
   }
 
 });
+
+document.getElementById("year").textContent = new Date().getFullYear();
