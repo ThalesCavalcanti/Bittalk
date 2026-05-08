@@ -111,6 +111,12 @@
     color: white;
   }
 
+  .layout {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 10px;
+  }
+
   .hamburger {
     display: flex !important;
     align-items: center;
