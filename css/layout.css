@@ -7,11 +7,132 @@
 
 @media (min-width: 1024px) {
   .layout {
-    width: min(100% - 2rem, 72rem);
-    margin-inline: auto;
+    display: grid !important;
+    width: min(100% - 2rem, 72rem) !important;
+    margin-inline: auto !important;
+    grid-template-columns: 280px minmax(0, 1fr) 220px !important;
+    gap: var(--space-lg) !important;
+  }
 
-    grid-template-columns: 280px minmax(0, 1fr) 220px;
-    gap: var(--space-lg);
-    padding: var(--space-sm);
+  .perfil {
+    position: static !important;
+    display: block !important;
+    width: 100% !important; 
+    max-width: 280px !important;
+    height: auto !important;
+    transform: none !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+  }
+
+  .feed {
+    width: 100% !important;
+    min-width: 0 !important; 
+  }
+
+  .sidebar {
+    display: block !important;
+    width: 100% !important;
+    max-width: 220px !important;
+  }
+
+  .mobile-header, 
+  .hamburger {
+    display: none !important;
+  }
+}
+
+@media (max-width: 769px) {
+
+  .layout {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    padding: 10px;
+  }
+ .mobile-header {
+    display: flex !important;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 15px;
+    background: #1f2937;
+    color: white;
+  }
+
+  .hamburger {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 26px;
+    cursor: pointer;
+  }
+ .perfil {
+    position: fixed;
+    top: 0;
+    left: -260px;
+    width: 250px;
+    height: 100vh;
+    z-index: 1000;
+    transition: .3s;
+  }
+ .perfil.active {
+    left: 0;
+  }
+
+  .feed {
+    width: 100%;
+  }
+
+  .post-card {
+    width: 100%;
+  }
+
+  .img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+}
+
+
+
+@media (max-width: 400px) {
+
+  .mobile-header {
+    display: flex !important;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 15px;
+    background: #1f2937;
+    color: white;
+  }
+
+  .hamburger {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 26px;
+    cursor: pointer;
+  }
+
+  .perfil {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 220px;
+    height: 100vh;
+    transition: .3s;
+    z-index: 9999;
+  }
+
+  .perfil.active {
+    left: 0;
   }
 }

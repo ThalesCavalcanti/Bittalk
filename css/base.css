@@ -23,3 +23,8 @@ button {
   font: inherit;
 }
 
+.perfil,
+.feed,
+.sidebar {
+  display: block;
+}
