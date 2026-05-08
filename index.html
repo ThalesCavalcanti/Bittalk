@@ -5,371 +5,326 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Bittalk</title>
-    
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-    href="https://fonts.googleapis.com/css2?family=Jersey+15&display=swap"
-    rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Jersey+15&display=swap"
+      rel="stylesheet"
     />
-    
+
     <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
-    <link rel="stylesheet" href="css\reset.css">
+    <link rel="stylesheet" href="css\reset.css" />
     <link rel="stylesheet" href="css\base.css" />
     <link rel="stylesheet" href="css\layout.css" />
-    <link rel="stylesheet" href="css\utilities.css">
-    <link rel="stylesheet" href="css\variables.css">
+    <link rel="stylesheet" href="css\utilities.css" />
+    <link rel="stylesheet" href="css\variables.css" />
     <link rel="stylesheet" href="css\components\feed.css" />
     <link rel="stylesheet" href="css\components\navbar.css" />
     <link rel="stylesheet" href="css\components\profile.css" />
     <link rel="stylesheet" href="css\components\sidebar.css" />
-    <link rel="stylesheet" href="css\components\footer.css">
+    <link rel="stylesheet" href="css\components\footer.css" />
   </head>
 
- <body>
+  <body>
+    <header class="site-header">
+      <h1 class="logo">Bittalk</h1>
 
-  <header class="site-header">
-
-    <h1 class="logo">Bittalk</h1>
-
-    <div class="search-wrapper">
-      <i class="fa-solid fa-magnifying-glass"></i>
-      <input
-        class="search"
-        type="search"
-        placeholder="Buscar conteúdo..."
-        aria-label="Buscar"
-      />
-    </div>
-
-    <nav class="nav" aria-label="Navegação principal">
-
-      <button class="nav-btn" aria-label="Menu">
-       <i class="fa-solid fa-envelope"></i>
-      </button>
-
-      <button class="nav-btn" aria-label="Notificações">
-        <i class="fa-solid fa-bell"></i>
-      </button>
-
-      <a href="#" class="nav-link">
-        <i class="fa-solid fa-video"></i>
-        Lives
-      </a>
-
-    </nav>
-
-  </header>
-<header class="mobile-header">
-
-  <h2>GameFeed</h2>
-
-  <button class="hamburger" aria-label="Abrir menu">
-    <i class="fa-solid fa-bars"></i>
-  </button>
-
-</header>
-  <main class="layout">
-    <aside class="perfil">
-
-      <div class="perfil-header">
-        <img
-          src="https://i.pravatar.cc/80?img=12"
-          alt="Foto de perfil do usuário"
+      <div class="search-wrapper">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input
+          class="search"
+          type="search"
+          placeholder="Buscar conteúdo..."
+          aria-label="Buscar"
         />
-        <h2>Meu perfil</h2>
       </div>
 
-      <nav class="perfil-menu" aria-label="Menu do perfil">
-        <a href="#">Perfil</a>
-        <a href="#">Meus Jogos</a>
-        <a href="#" class="perfilSair">Sair</a>
+      <nav class="nav" aria-label="Navegação principal">
+        <button class="nav-btn" aria-label="Menu">
+          <i class="fa-solid fa-envelope"></i>
+        </button>
+
+        <button class="nav-btn" aria-label="Notificações">
+          <i class="fa-solid fa-bell"></i>
+        </button>
+
+        <a href="#" class="nav-link">
+          <i class="fa-solid fa-video"></i>
+          Lives
+        </a>
       </nav>
+    </header>
+    <header class="mobile-header">
+      <h2>GameFeed</h2>
 
-    </aside>
-    <section class="cards-grid" aria-label="Feed de publicações">
+      <button class="hamburger" aria-label="Abrir menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </header>
+    <main class="layout">
+      <aside class="perfil">
+        <div class="perfil-header">
+          <img
+            src="https://i.pravatar.cc/80?img=12"
+            alt="Foto de perfil do usuário"
+          />
+          <h2>Meu perfil</h2>
+        </div>
 
-      <article class="post-card card--featured">
+        <nav class="perfil-menu" aria-label="Menu do perfil">
+          <a href="#">Perfil</a>
+          <a href="#">Meus Jogos</a>
+          <a href="#" class="perfilSair">Sair</a>
+        </nav>
+      </aside>
+      <section class="cards-grid" aria-label="Feed de publicações">
+        <article class="post-card card--featured">
+          <header class="post-header">
+            <div class="post-user">
+              <img
+                src="https://i.pravatar.cc/40?img=1"
+                class="avatar"
+                alt="Foto de João Silva"
+              />
 
-        <header class="post-header">
+              <div>
+                <h3 class="nome">João Silva</h3>
+                <time class="meta" datetime="2026-04-24T14:00"> 2h atrás </time>
+              </div>
+            </div>
+          </header>
 
-          <div class="post-user">
+          <div class="post-content">
+            <p class="texto">
+              Na falta de um controle para console adaptei um pro celular.
+            </p>
+
+            <figure class="post-image">
+              <img
+                src="assets/img/pexels-ninosouza-2883028.jpg"
+                class="img"
+                alt="Imagem de gameplay"
+              />
+            </figure>
+          </div>
+
+          <footer class="post-actions">
+            <button class="action-btn" aria-label="Curtir">
+              <i class="fa-solid fa-face-laugh-beam"></i>
+            </button>
+
+            <button class="action-btn" aria-label="Comentar">
+              <i class="fa-brands fa-discourse"></i>
+            </button>
+
+            <button class="action-btn" aria-label="Compartilhar">
+              <i class="fa-solid fa-share"></i>
+            </button>
+          </footer>
+        </article>
+
+        <article class="post-card">
+          <header class="post-header">
+            <div class="post-user">
+              <img
+                src="https://i.pravatar.cc/40?img=8"
+                class="avatar"
+                alt="Foto de PlayerOne"
+              />
+
+              <div>
+                <h3 class="nome">PlayerOne</h3>
+                <time class="meta" datetime="2026-04-24T15:00"> 1h atrás </time>
+              </div>
+            </div>
+          </header>
+
+          <div class="post-content">
+            <p class="texto">
+              Finalmente consegui zerar aquela fase impossível 😤🔥
+            </p>
+
+            <figure class="post-image">
+              <img
+                src="/assets/img/103303349-homem-jogando-divertido-gamepad-gamepad-jogo-jogos-online-esports-conceito.jpg"
+                class="img"
+                alt="Imagem de jogo de corrida"
+              />
+            </figure>
+          </div>
+
+          <footer class="post-actions">
+            <button class="action-btn" aria-label="Curtir">
+              <i class="fa-solid fa-face-laugh-beam"></i>
+            </button>
+
+            <button class="action-btn" aria-label="Comentar">
+              <i class="fa-brands fa-discourse"></i>
+            </button>
+
+            <button class="action-btn" aria-label="Compartilhar">
+              <i class="fa-solid fa-share"></i>
+            </button>
+          </footer>
+          <header class="post-header">
+            <div class="post-user">
+              <img
+                src="https://i.pravatar.cc/40?img=15"
+                class="avatar"
+                alt="Foto de PlayerOne"
+              />
+
+              <div>
+                <h3 class="nome">PlayerOne</h3>
+                <time class="meta" datetime="2026-04-24T15:00"> 1h atrás </time>
+              </div>
+            </div>
+          </header>
+          <div class="post-content">
+            <p class="texto">Mais uma vez o MVP da partida 🔥</p>
+
+            <figure class="post-image">
+              <img
+                src="/assets/img/360_F_701145370_ciAM8Yr2efOzlHHTNLyFYT0j87WqRrCQ.jpg"
+                class="img"
+                alt="Imagem de jogo de corrida"
+              />
+            </figure>
+          </div>
+
+          <footer class="post-actions">
+            <button class="action-btn" aria-label="Curtir">
+              <i class="fa-solid fa-face-laugh-beam"></i>
+            </button>
+
+            <button class="action-btn" aria-label="Comentar">
+              <i class="fa-brands fa-discourse"></i>
+            </button>
+
+            <button class="action-btn" aria-label="Compartilhar">
+              <i class="fa-solid fa-share"></i>
+            </button>
+          </footer>
+          <header class="post-header">
+            <div class="post-user">
+              <img
+                src="https://i.pravatar.cc/40?img=16"
+                class="avatar"
+                alt="Foto de PlayerOne"
+              />
+
+              <div>
+                <h3 class="nome">PlayerOne</h3>
+                <time class="meta" datetime="2026-04-24T15:00"> 1h atrás </time>
+              </div>
+            </div>
+          </header>
+          <div class="post-content">
+            <p class="texto">
+              E vamos de jogo novo no final de semana! Alguém aí já jogou esse?
+            </p>
+
+            <figure class="post-image">
+              <img
+                src="/assets/img/360_F_599720625_N2U8AQzhS5y7llrp2AMAQmKL4B6nWHKT.jpg"
+                class="img"
+                alt="Imagem de jogo de corrida"
+              />
+            </figure>
+          </div>
+
+          <footer class="post-actions">
+            <button class="action-btn" aria-label="Curtir">
+              <i class="fa-solid fa-face-laugh-beam"></i>
+            </button>
+
+            <button class="action-btn" aria-label="Comentar">
+              <i class="fa-brands fa-discourse"></i>
+            </button>
+
+            <button class="action-btn" aria-label="Compartilhar">
+              <i class="fa-solid fa-share"></i>
+            </button>
+          </footer>
+        </article>
+      </section>
+      <aside class="sidebar" aria-label="Usuários online">
+        <h2 class="titulo">Online</h2>
+
+        <ul class="lista_usuarios">
+          <li class="usuario online">
             <img
               src="https://i.pravatar.cc/40?img=1"
               class="avatar"
-              alt="Foto de João Silva"
+              alt="João"
             />
-
-            <div>
-              <h3 class="nome">João Silva</h3>
-              <time class="meta" datetime="2026-04-24T14:00">
-                2h atrás
-              </time>
+            <div class="info">
+              <span class="nome">João</span>
+              <span class="status">Jogando Stardew Valley</span>
             </div>
-          </div>
+            <span class="indicador"></span>
+          </li>
 
-        </header>
-
-        <div class="post-content">
-
-          <p class="texto">
-            Na falta de um controle para console adaptei um pro celular.
-          </p>
-
-          <figure class="post-image">
+          <li class="usuario online">
             <img
-              src="assets/img/pexels-ninosouza-2883028.jpg"
-              class="img"
-              alt="Imagem de gameplay"
-            />
-          </figure>
-
-        </div>
-
-        <footer class="post-actions">
-
-          <button class="action-btn" aria-label="Curtir">
-            <i class="fa-solid fa-face-laugh-beam"></i>
-          </button>
-
-          <button class="action-btn" aria-label="Comentar">
-            <i class="fa-brands fa-discourse"></i>
-          </button>
-
-          <button class="action-btn" aria-label="Compartilhar">
-            <i class="fa-solid fa-share"></i>
-          </button>
-
-        </footer>
-
-      </article>
-
-      <article class="post-card">
-
-        <header class="post-header">
-
-          <div class="post-user">
-            <img
-              src="https://i.pravatar.cc/40?img=8"
+              src="https://i.pravatar.cc/40?img=2"
               class="avatar"
-              alt="Foto de PlayerOne"
+              alt="Maria"
             />
-
-            <div>
-              <h3 class="nome">PlayerOne</h3>
-              <time class="meta" datetime="2026-04-24T15:00">
-                1h atrás
-              </time>
+            <div class="info">
+              <span class="nome">Maria</span>
+              <span class="status">Online</span>
             </div>
-          </div>
+            <span class="indicador"></span>
+          </li>
 
-        </header>
-
-        <div class="post-content">
-
-          <p class="texto">
-            Finalmente consegui zerar aquela fase impossível 😤🔥
-          </p>
-
-          <figure class="post-image">
+          <li class="usuario online">
             <img
-              src="/assets/img/103303349-homem-jogando-divertido-gamepad-gamepad-jogo-jogos-online-esports-conceito.jpg"
-              class="img"
-              alt="Imagem de jogo de corrida"
-            />
-          </figure>
-
-        </div>
-
-        <footer class="post-actions">
-
-          <button class="action-btn" aria-label="Curtir">
-            <i class="fa-solid fa-face-laugh-beam"></i>
-          </button>
-
-          <button class="action-btn" aria-label="Comentar">
-            <i class="fa-brands fa-discourse"></i>
-          </button>
-
-          <button class="action-btn" aria-label="Compartilhar">
-            <i class="fa-solid fa-share"></i>
-          </button>
-
-        </footer>
-        <header class="post-header">
-
-          <div class="post-user">
-            <img
-              src="https://i.pravatar.cc/40?img=15"
+              src="https://i.pravatar.cc/40?img=11"
               class="avatar"
-              alt="Foto de PlayerOne"
+              alt="Junior"
             />
-
-            <div>
-              <h3 class="nome">PlayerOne</h3>
-              <time class="meta" datetime="2026-04-24T15:00">
-                1h atrás
-              </time>
+            <div class="info">
+              <span class="nome">Junior</span>
+              <span class="status">Jogando Minecraft</span>
             </div>
-          </div>
+            <span class="indicador"></span>
+          </li>
+        </ul>
+      </aside>
+    </main>
 
-        </header>
-        <div class="post-content">
+    <button id="iconeTalk" aria-label="Abrir chat">
+      <i class="fa-solid fa-gamepad"></i>
+    </button>
 
-          <p class="texto">
-            Mais uma vez o MVP da partida  🔥
-          </p>
-
-          <figure class="post-image">
-            <img
-              src="/assets/img/360_F_701145370_ciAM8Yr2efOzlHHTNLyFYT0j87WqRrCQ.jpg"
-              class="img"
-              alt="Imagem de jogo de corrida"
-            />
-          </figure>
-
+    <footer class="footer">
+      <div class="footer-grid">
+        <div>
+          <h4>Bittalk</h4>
+          <p>Rede social gamer</p>
         </div>
 
-        <footer class="post-actions">
-
-          <button class="action-btn" aria-label="Curtir">
-            <i class="fa-solid fa-face-laugh-beam"></i>
-          </button>
-
-          <button class="action-btn" aria-label="Comentar">
-            <i class="fa-brands fa-discourse"></i>
-          </button>
-
-          <button class="action-btn" aria-label="Compartilhar">
-            <i class="fa-solid fa-share"></i>
-          </button>
-
-        </footer>
-        <header class="post-header">
-
-          <div class="post-user">
-            <img
-              src="https://i.pravatar.cc/40?img=16"
-              class="avatar"
-              alt="Foto de PlayerOne"
-            />
-
-            <div>
-              <h3 class="nome">PlayerOne</h3>
-              <time class="meta" datetime="2026-04-24T15:00">
-                1h atrás
-              </time>
-            </div>
-          </div>
-
-        </header>
-        <div class="post-content">
-
-          <p class="texto">
-            E vamos de jogo novo no final de semana! Alguém aí já jogou esse?
-          </p>
-
-          <figure class="post-image">
-            <img
-              src="/assets/img/360_F_599720625_N2U8AQzhS5y7llrp2AMAQmKL4B6nWHKT.jpg"
-              class="img"
-              alt="Imagem de jogo de corrida"
-            />
-          </figure>
-
+        <div>
+          <h4>Links</h4>
+          <p>Feed</p>
+          <p>Perfil</p>
         </div>
 
-        <footer class="post-actions">
+        <div>
+          <h4>Ajuda</h4>
+          <p>Suporte</p>
+        </div>
+      </div>
 
-          <button class="action-btn" aria-label="Curtir">
-            <i class="fa-solid fa-face-laugh-beam"></i>
-          </button>
-
-          <button class="action-btn" aria-label="Comentar">
-            <i class="fa-brands fa-discourse"></i>
-          </button>
-
-          <button class="action-btn" aria-label="Compartilhar">
-            <i class="fa-solid fa-share"></i>
-          </button>
-
-        </footer>
-
-
-      </article>
-
-    </section>
-    <aside class="sidebar" aria-label="Usuários online">
-
-      <h2 class="titulo">Online</h2>
-
-      <ul class="lista_usuarios">
-
-        <li class="usuario online">
-          <img src="https://i.pravatar.cc/40?img=1" class="avatar" alt="João" />
-          <div class="info">
-            <span class="nome">João</span>
-            <span class="status">Jogando Stardew Valley</span>
-          </div>
-          <span class="indicador"></span>
-        </li>
-
-        <li class="usuario online">
-          <img src="https://i.pravatar.cc/40?img=2" class="avatar" alt="Maria" />
-          <div class="info">
-            <span class="nome">Maria</span>
-            <span class="status">Online</span>
-          </div>
-          <span class="indicador"></span>
-        </li>
-
-        <li class="usuario online">
-          <img src="https://i.pravatar.cc/40?img=11" class="avatar" alt="Junior" />
-          <div class="info">
-            <span class="nome">Junior</span>
-            <span class="status">Jogando Minecraft</span>
-          </div>
-          <span class="indicador"></span>
-        </li>
-
-      </ul>
-
-    </aside>
-
-  </main>
-
-  <button id="iconeTalk" aria-label="Abrir chat">
-    <i class="fa-solid fa-gamepad"></i>
-  </button>
-
-  <footer class="footer">
-
-  <div class="footer-grid">
-
-    <div>
-      <h4>Bittalk</h4>
-      <p>Rede social gamer</p>
-    </div>
-
-    <div>
-      <h4>Links</h4>
-      <p>Feed</p>
-      <p>Perfil</p>
-    </div>
-
-    <div>
-      <h4>Ajuda</h4>
-      <p>Suporte</p>
-    </div>
-
-  </div>
-
-  <p>&copy; <span id="year"></span> Bittalk. Todos os direitos reservados.</p>
-
-</footer>
-<script src="script.js"></script>
-</body>
+      <p>
+        &copy; <span id="year"></span> Bittalk. Todos os direitos reservados.
+      </p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
 </html>
