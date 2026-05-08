@@ -17,9 +17,14 @@
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
-    <link rel="stylesheet" href="css\components\footer.css" />
-    <link rel="stylesheet" href="css\components\variables.css" />
-    <link rel="stylesheet" href="css\components\main.css" />
+    <link rel="stylesheet" href="css\base.css" />
+    <link rel="stylesheet" href="css\layout.css" />
+    <link rel="stylesheet" href="css\components\feed.css" />
+    <link rel="stylesheet" href="css\components\floating-button.css" />
+    <link rel="stylesheet" href="css\components\navbar.css" />
+    <link rel="stylesheet" href="css\components\perfil.css" />
+    <link rel="stylesheet" href="css\components\search.css" />
+    <link rel="stylesheet" href="css\components\sidebar.css" />
     <link rel="stylesheet" href="css\components\footer.css" />
   </head>
 
@@ -71,60 +76,128 @@
       </aside>
 
       <section class="feed" aria-label="Feed de publicações">
-        <article class="post">
-          <header class="topo">
-            <img
-              src="https://i.pravatar.cc/40?img=1"
-              class="avatar"
-              alt="Foto de João Silva"
-            />
 
-            <div>
-              <h3 class="nome">João Silva</h3>
-              <time class="meta" datetime="2026-04-24T14:00">2h atrás</time>
-            </div>
-          </header>
+  <article class="post-card">
 
-          <p class="texto">
-            Na falta de um controle para console adaptei um pro celular.
-          </p>
+    <header class="post-header">
 
-          <figure>
-            <img
-              src="/pexels-ninosouza-2883028.jpg"
-              class="img"
-              alt="Imagem de gameplay"
-            />
-          </figure>
-        </article>
+      <div class="post-user">
+        <img
+          src="https://i.pravatar.cc/40?img=1"
+          class="avatar"
+          alt="Foto de João Silva"
+        />
 
-        <article class="post">
-          <header class="topo">
-            <img
-              src="https://i.pravatar.cc/40?img=8"
-              class="avatar"
-              alt="Foto de PlayerOne"
-            />
+        <div>
+          <h3 class="nome">João Silva</h3>
 
-            <div>
-              <h3 class="nome">PlayerOne</h3>
-              <time class="meta" datetime="2026-04-24T15:00">1h atrás</time>
-            </div>
-          </header>
+          <time class="meta" datetime="2026-04-24T14:00">
+            2h atrás
+          </time>
+        </div>
+      </div>
 
-          <p class="texto">
-            Finalmente consegui zerar aquela fase impossível 😤🔥
-          </p>
+      <button class="post-options" aria-label="Mais opções">
+        ⋯
+      </button>
 
-          <figure>
-            <img
-              src="/needspeedworld_219737.jpg"
-              alt="Imagem de jogo de corrida"
-            />
-          </figure>
-        </article>
-      </section>
+    </header>
 
+    <div class="post-content">
+
+      <p class="texto">
+        Na falta de um controle para console adaptei um pro celular.
+      </p>
+
+      <figure class="post-image">
+        <img
+          src="/pexels-ninosouza-2883028.jpg"
+          class="img"
+          alt="Imagem de gameplay"
+        />
+      </figure>
+
+    </div>
+
+    <footer class="post-actions">
+
+      <button class="action-btn">
+        Curtir
+      </button>
+
+      <button class="action-btn">
+        Comentar
+      </button>
+
+      <button class="action-btn">
+        Compartilhar
+      </button>
+
+    </footer>
+
+  </article>
+
+  <article class="post-card">
+
+    <header class="post-header">
+
+      <div class="post-user">
+        <img
+          src="https://i.pravatar.cc/40?img=8"
+          class="avatar"
+          alt="Foto de PlayerOne"
+        />
+
+        <div>
+          <h3 class="nome">PlayerOne</h3>
+
+          <time class="meta" datetime="2026-04-24T15:00">
+            1h atrás
+          </time>
+        </div>
+      </div>
+
+      <button class="post-options" aria-label="Mais opções">
+        ⋯
+      </button>
+
+    </header>
+
+    <div class="post-content">
+
+      <p class="texto">
+        Finalmente consegui zerar aquela fase impossível 😤🔥
+      </p>
+
+      <figure class="post-image">
+        <img
+          src="/needspeedworld_219737.jpg"
+          class="img"
+          alt="Imagem de jogo de corrida"
+        />
+      </figure>
+
+    </div>
+
+    <footer class="post-actions">
+
+      <button class="action-btn">
+        Curtir
+      </button>
+
+      <button class="action-btn">
+        Comentar
+      </button>
+
+      <button class="action-btn">
+        Compartilhar
+      </button>
+
+    </footer>
+
+  </article>
+
+</section>
       <aside class="sidebar" aria-label="Usuários online">
         <h2>Online</h2>
 
