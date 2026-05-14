@@ -1,0 +1,82 @@
+/* primitives.css */
+
+:root {
+    /* =========================
+       PRIMITIVE COLORS
+    ========================== */
+  
+    --_blue-500: #2E75B6;
+  
+    --_gray-900: #121212;
+    --_gray-850: #171616;
+    --_gray-800: #1a1a1a;
+    --_gray-750: #1f1f1f;
+    --_gray-700: #232525;
+    --_gray-600: #2a2a2a;
+    --_gray-500: #333333;
+    --_gray-400: #80848e;
+    --_gray-300: #888888;
+    --_gray-200: #9ca3af;
+    --_gray-100: #f2f2eb;
+  
+    --_red-700: #a22c2c;
+    --_green-500: #23a55a;
+  
+    --_blue-gray-700: #1f2937;
+    --_blue-gray-900: #111827;
+  
+    --_white: #ffffff;
+    --_black: #000000;
+  
+    /* =========================
+       PRIMITIVE RADIUS
+    ========================== */
+  
+    --_radius-sm: 4px;
+    --_radius-md: 6px;
+    --_radius-lg: 8px;
+    --_radius-xl: 10px;
+    --_radius-2xl: 12px;
+    --_radius-full: 50%;
+  
+    /* =========================
+       PRIMITIVE BORDERS
+    ========================== */
+  
+    --_border-width-sm: 1px;
+    --_border-width-md: 2px;
+  
+    /* =========================
+       PRIMITIVE SIZES
+    ========================== */
+  
+    --_avatar-sm: 40px;
+    --_avatar-lg: 80px;
+  
+    --_sidebar-width: 220px;
+    --_perfil-width: 250px;
+    --_perfil-width-desktop: 280px;
+  
+    --_icon-md: 24px;
+    --_icon-lg: 32px;
+  
+    /* =========================
+       TRANSITIONS
+    ========================== */
+  
+    --_transition-fast: 0.2s;
+    --_transition-default: 0.3s;
+  
+    /* =========================
+       Z-INDEX
+    ========================== */
+  
+    --_z-sidebar: 1000;
+    --_z-overlay: 9999;
+  
+    /* =========================
+       OPACITY
+    ========================== */
+  
+    --_opacity-muted: 0.7;
+  }

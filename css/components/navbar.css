@@ -1,54 +1,22 @@
-.site-header {
+.navbar {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  gap: var(--space-sm);
-  padding: var(--space-sm);
-  border-bottom: 1px solid var(--cor-bordas);
+
+  padding: var(--space-2);
+  border-bottom: var(--border-default);
 }
 
-.site-header nav {
-  display: flex;
-  gap: var(--space-md);
-  align-items: center;
-}
-
-.site-header a {
-  text-decoration: none;
-  color: rgb(162, 44, 44);
-  padding: 6px 10px;
-  border: 2px solid var(--cor-lista-amigos);
-  border-radius: 8px;
-}
-
-.site-header button {
-  background: none;
-  border: 2px solid var(--cor-bordas);
-  color: var(--cor-texto);
-  padding: 6px 10px;
-  border-radius: 6px;
-  cursor: pointer;
+.navbar a {
+  padding: var(--space-2) var(--space-3);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  color: var(--color-danger);
 }
 
 .search {
   width: 100%;
-  padding: 12px 32px;
-  border: 1px solid var(--cor-lista-amigos);
-  border-radius: 6px;
-  color: black;
-}
-
-.search-wrapper {
-  position: relative;
-  width: 100%;
-  max-width: 600px;
-}
-
-.search-wrapper i {
-  position: absolute;
-  left: 12px;
-  top: 50%;
-  transform: translateY(-50%);
-  color: #888;
-  font-size: 14px;
+  padding: var(--space-3) var(--space-8);
+  border: var(--border-default);
+  border-radius: var(--radius-md);
 }
