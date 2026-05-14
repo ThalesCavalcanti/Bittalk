@@ -1,17 +1,134 @@
-.profile {
+.perfil {
   display: flex;
   flex-direction: column;
-  gap: var(--space-3);
 
-  padding: var(--space-3);
-  text-align: center;
+  gap: var(--space-xl);
 
-  background: var(--color-surface);
-  border-radius: var(--radius-xl);
+  padding: var(--space-xl);
+
+  background:
+    linear-gradient(180deg,
+      #111111,
+      #171717);
+
+  border:
+    1px solid rgba(255, 255, 255, 0.08);
+
+  border-radius: var(--radius-lg);
+
+  box-shadow:
+    0 10px 30px rgba(0, 0, 0, .35);
+
+  overflow: hidden;
 }
 
-.profile img {
-  width: var(--avatar-lg);
-  height: var(--avatar-lg);
+.perfil-header {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+
+  gap: var(--space-sm);
+
+  padding-bottom: var(--space-lg);
+
+  border-bottom:
+    1px solid rgba(255, 255, 255, 0.06);
+}
+
+.perfil-header img {
+  width: 84px;
+  height: 84px;
+
+  object-fit: cover;
+
   border-radius: var(--radius-full);
+
+  border:
+    2px solid rgba(255, 255, 255, 0.12);
+
+  padding: 3px;
+
+  background: #0f0f0f;
+}
+
+.perfil-header h2 {
+  font-size: var(--font-size-lg);
+
+  color: var(--text-primary);
+
+  letter-spacing: 1px;
+
+  text-transform: uppercase;
+}
+
+.perfil-header span {
+  font-size: var(--font-size-sm);
+
+  color: var(--text-secondary);
+}
+
+
+
+.perfil-menu {
+  display: flex;
+  flex-direction: column;
+
+  gap: var(--space-xs);
+}
+
+.perfil-menu a {
+  display: flex;
+
+  align-items: center;
+
+  gap: var(--space-sm);
+
+  padding:
+    .9rem 1rem;
+
+  border-radius: var(--radius-md);
+
+  text-decoration: none;
+
+  color: var(--text-primary);
+
+  background: transparent;
+
+  border:
+    1px solid transparent;
+
+  transition:
+    background .2s ease,
+    border-color .2s ease,
+    transform .2s ease;
+}
+
+.perfil-menu a:hover {
+  background:
+    rgba(255, 255, 255, 0.05);
+
+  border-color:
+    rgba(255, 255, 255, 0.08);
+
+  transform: translateX(4px);
+}
+
+
+
+.perfil-footer {
+  margin-top: auto;
+
+  padding-top: var(--space-md);
+
+  border-top:
+    1px solid rgba(255, 255, 255, 0.06);
+}
+
+.perfil-footer a {
+  color: var(--text-secondary);
+}
+
+.perfil-footer a:hover {
+  color: white;
 }

@@ -1,76 +1,22 @@
-/* semantic.css */
-
 :root {
-    /* =========================
-       COLORS
-    ========================== */
-  
-    --color-primary: var(--_blue-500);
-  
-    --color-background: var(--_gray-900);
-    --color-surface: var(--_gray-700);
-    --color-surface-hover: var(--_gray-600);
-  
-    --color-text: var(--_gray-100);
-    --color-text-secondary: var(--_gray-200);
-    --color-text-muted: var(--_gray-300);
-  
-    --color-border: var(--_gray-500);
-  
-    --color-danger: var(--_red-700);
-    --color-success: var(--_green-500);
-  
-    --color-header-mobile: var(--_blue-gray-700);
-    --color-footer: var(--_blue-gray-900);
-  
-    --color-icon-background: var(--_gray-850);
-  
-    --color-white: var(--_white);
-    --color-black: var(--_black);
-  
-    /* =========================
-       BORDER
-    ========================== */
-  
-    --border-default:
-      var(--_border-width-sm)
-      solid
-      var(--color-border);
-  
-    /* =========================
-       RADIUS
-    ========================== */
-  
-    --radius-sm: var(--_radius-sm);
-    --radius-md: var(--_radius-md);
-    --radius-lg: var(--_radius-lg);
-    --radius-xl: var(--_radius-xl);
-    --radius-full: var(--_radius-full);
-  
-    /* =========================
-       SIZES
-    ========================== */
-  
-    --avatar-size-sm: var(--_avatar-sm);
-    --avatar-size-lg: var(--_avatar-lg);
-  
-    --sidebar-width: var(--_sidebar-width);
-    --perfil-width: var(--_perfil-width);
-    --perfil-width-desktop: var(--_perfil-width-desktop);
-  
-    /* =========================
-       EFFECTS
-    ========================== */
-  
-    --transition-fast: var(--_transition-fast);
-    --transition-default: var(--_transition-default);
-  
-    --opacity-muted: var(--_opacity-muted);
-  
-    /* =========================
-       Z-INDEX
-    ========================== */
-  
-    --z-sidebar: var(--_z-sidebar);
-    --z-overlay: var(--_z-overlay);
-  }
+   /* BACKGROUND */
+   --bg-body: var(--color-neutral-900);
+   --bg-surface: var(--color-neutral-700);
+   --bg-surface-secondary: var(--color-neutral-600);
+   --bg-hover: var(--color-neutral-500);
+   /* TEXT */
+   --text-primary: var(--color-neutral-100);
+   --text-secondary: var(--color-neutral-200);
+   /* BORDER */
+   --border-color: var(--color-neutral-400);
+   --border-default: 1px solid var(--border-color);
+   /* BRAND */
+   --brand-primary: var(--color-primary-500);
+   --brand-danger: var(--color-danger-500);
+   --brand-success: var(--color-success-500);
+   /* COMPONENTS */
+   --navbar-bg: var(--bg-surface);
+   --footer-bg: var(--color-neutral-800);
+   /* ICON */
+   --icon-color: var(--text-primary);
+}

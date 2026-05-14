@@ -1,24 +1,11 @@
-/* typography.css */
-
 :root {
-    /* family */
-    --font-family-primary: "Jersey 15", sans-serif;
-  
-    /* size */
-    --font-size-xs: 0.75rem;     /* 12px */
-    --font-size-sm: 0.875rem;    /* 14px */
-    --font-size-md: 1rem;        /* 16px */
-    --font-size-lg: 1.125rem;    /* 18px */
-    --font-size-xl: 1.5rem;      /* 24px */
-    --font-size-2xl: 2rem;       /* 32px */
-  
-    /* weight */
-    --font-weight-regular: 400;
-    --font-weight-medium: 500;
-    --font-weight-bold: 700;
-  
-    /* line height */
-    --line-height-tight: 1.2;
-    --line-height-normal: 1.5;
-    --line-height-relaxed: 1.8;
-  }
+  --font-family-base: "Jersey 15", sans-serif;
+  --font-size-xs: 0.75rem;
+  --font-size-sm: 0.875rem;
+  --font-size-md: 1rem;
+  --font-size-lg: 1.25rem;
+  --font-size-xl: 1.5rem;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+}
